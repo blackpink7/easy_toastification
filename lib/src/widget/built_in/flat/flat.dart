@@ -109,7 +109,7 @@ class FlatToastWidget extends StatelessWidget {
   }) {
     Widget body = Container(
       width: double.infinity,
-      constraints: const BoxConstraints(minHeight: 64,maxWidth: 400),
+      constraints: const BoxConstraints(minHeight: 64,minWidth: 400),
       decoration: BoxDecoration(
         color: applyBlurEffect ? background.withOpacity(0.5) : background,
         borderRadius: borderRadius,
