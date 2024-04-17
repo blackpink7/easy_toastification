@@ -108,7 +108,8 @@ class FlatToastWidget extends StatelessWidget {
     required bool applyBlurEffect,
   }) {
     Widget body = Container(
-      constraints: const BoxConstraints(minHeight: 64),
+      width: double.infinity,
+      constraints: const BoxConstraints(minHeight: 64,maxWidth: 400),
       decoration: BoxDecoration(
         color: applyBlurEffect ? background.withOpacity(0.5) : background,
         borderRadius: borderRadius,
